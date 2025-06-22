@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu,
+      sans-serif;
+    color: white;
+  }
+  body {
+    background-color: #000000;
+  }
+  .container2 {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.6) 60%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("./netflix_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #net {
+    display: flex;
+    gap: 60%;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+  #net a {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    padding: 8px;
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+  }
+  #net a:hover {
+    background-color: #c1010b;
+  }
+  #main {
+    margin-top: 6rem;
+    text-align: center;
+    color: white;
+  }
+  
+  h1 {
+    font-weight: 900;
+    line-height: 70px;
+    font-size: 56px;
+    margin: 0.1rem 0;
+  }
+  
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 25px;
+    margin-top: -10px;
+  }
+  
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .input {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+  }
+  
+  .email-container {
+    margin-top: 2%;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .input-container {
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 400px;
+  }
+  
+  input {
+    width: 100%;
+    height: 110%;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 1rem;
+    border: 1px solid #ffffffa4;
+    background-color: transparent;
+    color: #ffffffb1;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  input:focus {
+    border: 2px solid #ffffff;
+  }
+  
+  label {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    transform: translateY(-30%);
+    font-size: 1rem;
+    color: #ffffff97;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  input:focus + label,
+  input:not(:placeholder-shown) + label {
+    top: 8px;
+    left: 10px;
+    font-size: 0.7rem;
+    color: #ffffffa4;
+    padding-bottom: 9px;
+  }
+  .arrow {
+    font-style: normal;
+    font-weight: 600;
+    font-size: xx-large;
+    line-height: 24px;
+  }
+  button {
+    padding: 3px 3px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #f40612;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  button:hover {
+    background-color: #c1010b;
+  }
+  
+  #colors {
+    margin-top: -50px;
+  }
+  
+  /* reels */
+  /* external css: flickity.css */
+  .movie {
+    width: 70%;
+  }
+  .carousel-cell {
+    width: 20%;
+    height: 200px;
+    margin-right: 40px;
+  }
+  .carousel {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-cell {
+    position: relative; /* Enables positioning of child elements */
+    width: 20%;
+    height: 300px;
+    border-radius: 30%;
+    margin-right: 40px;
+    border-radius: 40px;
+    overflow: visible; /* Allow content to overflow outside the cell */
+  }
+  
+  .carousel-cell:hover {
+    transform: scale(1.05);
+    border-radius: 3%;
+    border: 5px solid rgb(0, 0, 0);
+  }
+  
+  .carousel-cell img {
+    border-radius: 6%;
+  }
+  
+  .carousel-cell img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-number {
+    position: absolute; /* Position it on top of the image */
+    top: 40%; /* Distance from the top */
+    left: -32px; /* Distance from the left */
+    line-height: 100px;
+    color: rgb(0, 0, 0); /* Text color */
+    -webkit-text-stroke: 2px white;
+    text-shadow: 12px 21px 12px rgba(0, 0, 0, 0.767);
+    font-size: 100px; /* Font size for the number */
+    font-weight: 700; /* Makes the text bold */
+    font-style: normal;
+  }
+  
+  /* reasons */
+  .third {
+    background-color: black;
+    padding: 100px 0;
+  }
+  .third h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 38px;
+  }
+  .third .card {
+    padding: 15px 5px;
+    /* width: 100%; */
+    height: 300px;
+    border-radius: 20px;
+    color: white;
+    background-image: linear-gradient(#1c1a35, #210f19);
+    margin-top: 10px;
+  }
+  .third h5 {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+  }
+  .third .card .card-body h6 {
+    text-align: left;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+  }
+  .third .card p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+  .third .card .licon {
+    transform: translateY(-25px);
+  }
+  
+  .container5 {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  /* asss */
+  
+  .Allaccordions {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    margin: 0 auto;
+  }
+  
+  .accordion {
+    margin-bottom: 10px;
+    background-color: #2d2d2d; /* Dark background */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    max-width: 1000px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .accordion:hover {
+    background-color: #5c5c5c;
+  }
+  
+  .accordion:after {
+    content: "\002B"; /* Plus sign */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .accordion.active:after {
+    content: "\2212"; /* Minus sign */
+    transform: rotate(180deg);
+  }
+  
+  .panel {
+    background-color: #2d2d2d;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .panel p {
+    padding: 15px 18px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  /*  */
+  #Trending h2 {
+    margin-left: 10%;
+  }
+  .container1 {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 23px;
+    margin-left: 10%;
+  }
+  .select select {
+    padding-left: 12px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    width: 7.3rem;
+    height: 2.3rem;
+    background-color: #2d2d2d;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .select select:focus {
+    border: 2px solid #fff;
+    background-color: #2d2d2d;
+  }
+  .container1 {
+    top: 50%;
+    left: 50%;
+  }
+  
+  #ready {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .row {
+    margin-bottom: 22px;
+    width: 97%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  .col {
+    margin-bottom: 9px;
+  }
+  a {
+    color: #939393;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .Questions {
+    margin-top: 50px;
+  }
+  #us {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    width: 95%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  
+  .aaa {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    width: 95%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-left: 6rem;
+  }
+  #pakistan {
+    width: 95%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-left: 6rem;
+  }
+  #pakistan p {
+    color: #939393;
+    margin-top: 3px;
+    margin-bottom: 7%;
+  }
